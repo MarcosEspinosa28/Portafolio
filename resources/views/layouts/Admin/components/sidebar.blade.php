@@ -29,8 +29,9 @@
                         {{ session('status') }}
                     </div>
                 @endif
-
-                {{ __('Bienvenido Marco A. Espinosa!') }}
+                {{ Auth::user()->name }}
+                <br>
+                {{ Auth::user()->email }}
                 </div>
             </nav>
         </div>

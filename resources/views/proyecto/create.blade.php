@@ -1,20 +1,25 @@
 
-
+@include('layouts.Admin.components.navbar')
+@include('layouts.Admin.components.sidebar')
+  
 @extends('layouts.app')
 
 @section('template_title')
     Crear Proyecto
 @endsection
 
+
 @section('content')
 
     <section class="content container-fluid">
+       
         <div class="row">
             <div class="col-md-12">
 
                 @includeif('partials.errors')
 
                 <div class="card card-default">
+                    
                     <div class="card-header">
                         <span class="card-title">Crear Proyecto</span>
                     </div>
@@ -28,6 +33,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 @endsection

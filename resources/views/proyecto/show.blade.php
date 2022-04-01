@@ -1,3 +1,5 @@
+@include('layouts.Admin.components.navbar')
+@include('layouts.Admin.components.sidebar')
 @extends('layouts.app')
 
 @section('template_title')
@@ -11,10 +13,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Proyecto</span>
+                            <span class="card-title">Mostrar Proyecto</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('proyectos.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('proyectos.index') }}"> Atras</a>
                         </div>
                     </div>
 

@@ -7,13 +7,18 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Admin Portafolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+         <!-- Favicon-->
+         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+         <!-- Font Awesome icons (free version)-->
+         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+         <!-- Google fonts-->
+         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/css/styles.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-        @include('layouts.Admin.navbar.navbar')
-        @include('layouts.Admin.sidebar.sidebar')
+        @include('layouts.Admin.components.navbar')
+        @include('layouts.Admin.components.sidebar')
         <main>
             <div class="container-fluid px-4">
                         <h1 class="mt-4">Dashboard</h1>
@@ -80,26 +85,21 @@
                         </div>
                     </div>
                 </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; htyps//:www.nec.com.co 2022</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+                @include('layouts.Admin.components.footer')
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <script src="js/js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="assets/assets/demo/chart-area-demo.js"></script>
+        <script src="assets/assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/js/datatables-simple-demo.js"></script>
+         <!-- Bootstrap core JS-->
+         <!-- Core theme JS-->
+         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+         <!-- * *                               SB Forms JS                               * *-->
+         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
